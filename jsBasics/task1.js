@@ -4,7 +4,7 @@ console.log(name);
 let age = 25; //number
 console.log(age);
 
-var marriage = false; //boolean
+let marriage = false; //boolean
 console.log(marriage);
 
 let nullNumber = null; //null

@@ -2,16 +2,13 @@ import chalk from "chalk";
 
 function divide(numerator, denominator) {
     if (denominator === 0) {
-        console.log(chalk.red('Ділення на нуль недопустиме!'));
-        return;
+        throw new Error(chalk.red('Ділення на нуль недопустиме!'));
     } else if (typeof numerator !== 'number' || typeof denominator !== 'number') {
-        console.log(chalk.red('Ділення неможливе. Один з аргументів не є числом.'));
-        return;
+        throw new Error(chalk.red('Ділення неможливе. Один з аргументів не є числом.'));
     } 
 
     const sum = numerator / denominator
     console.log(chalk.blue(sum));
-    //return sum;
 }
 
 console.log();

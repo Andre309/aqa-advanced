@@ -7,7 +7,7 @@ class EBook extends Book {
         this.format = format; 
     }
 
-    // Статичний метод, який приймає як аргументи екземпляр класу Book і формат файлу як рядок
+    // Статичний метод, який приймає як аргументи екземпляр класу Book
     static fromBook(book, format) {
         if (!(book instanceof Book)) {
             throw new Error('Аргумент повинен бути екземпляром класу Book.');

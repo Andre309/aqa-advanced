@@ -61,7 +61,7 @@ class Book {
         this._year = value;
     }
 
-    // Вивід всієї інформації класу Book
+    // Метод виводу всієї інформації класу Book
 
     printInfo() {
         console.log(`Назва: ${chalk.blue(this.name)}, Автор: ${chalk.green(this.author)}, Рік видання: ${chalk.yellow(this.year)}`);
